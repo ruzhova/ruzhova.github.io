@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/8984b92ac6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/theme.css" id="theme_link">
+    <link rel="stylesheet" href="../css/level3.css">
+    <script defer src="../js/level3_task.js"></script>
+    <script type="module" src="../js/base.js"></script>
+    <script defer src="../js/modal.js"></script>
+    <script type="module" src="../js/timer.js"></script>
+    <title>уровень 3</title>
+  </head>
+  <body onload="currtask()">
+    <script defer src="../js/theme_load.js"></script>
+    <header>
+      <p class="author">anastasia ruzhova</p>
+    </header>
+    <main>
+      <section class="content-overflow">
+        <h1 class="game_title">Уровень 3</h1>
+        <h2 class="task_info" id="taskfield"></h2>
+        <div class="block"><a>Таймер</a>
+          <div id="timer">0:00</div>
+        </div>
+        <div id="about" class="modal">
+          <div class="modal-content">
+            <div class="modal-header">
+                <h2> Внимание! </h2>
+            </div>
+            <div class="modal-body">
+              <p>Время вышло!</p>
+            </div>
+          </div>
+        </div>
+        <div id="true_answer" class="modal">
+          <div class="modal-content">
+            <div class="modal-body">
+              <p>Верный ответ!</p>
+            </div>
+          </div>
+        </div>
+        <div id="true_false_answer" class="modal">
+          <div class="modal-content">
+            <div class="modal-body">
+              <p>Частично верный ответ!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="buttonclass close" data-close="true">Закрыть</button>
+            </div>
+          </div>
+        </div>
+        <div id="false_answer" class="modal">
+          <div class="modal-content">
+            <div class="modal-body">
+              <p>Неверный ответ!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="buttonclass close" data-close="true">Закрыть</button>
+            </div>
+          </div>
+        </div>
+        <div class="level-3" id="level3_container">
+            <div id="figures">
+
+            </div>
+            <div id="result">
+                <div class="res_cont" id="1"></div>
+                <div class="res_cont" id="2"></div>
+                <div class="res_cont" id="3"></div>
+                <div class="res_cont" id="4"></div>
+                <div class="res_cont" id="5"></div>
+            </div>
+        </div> 
+        <div class="bottom">
+          <button class="buttonclass game_info" id="ready" onclick="check_result()"> готово </button>
+          <div class="bottom_menu">
+            <button class="buttonclass game_info" id="theme_change"> сменить тему </button>
+            <button class="buttonclass game_info" onclick='location.href="../../index.html"'> главное меню </button>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <p>2022</p>    
+      </footer>
+    </main>
+    <!-- <script type="module" src="../js/base.js"></script> -->
+  </body>
+</html> 

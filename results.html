@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/8984b92ac6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/theme.css" id="theme_link">
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script defer type="module" src="js/base.js"></script>
+    <script defer type="module" src="js/results.js"></script>
+    <script defer src="js/modal.js"></script>
+    <title>результаты</title>
+  </head>
+  <body>
+    <script defer src="js/theme_load.js"></script>
+    <header>
+      <p class="author">anastasia ruzhova</p>
+    </header>
+    <main>
+      <section class="content-overflow">
+        <h1 class="game_title">Результаты:</h1>
+        <h2 class="auth_label" id="name"></h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Уровень</th>
+                    <th>Баллы</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Уровень 1</td>
+                    <td id="level1"></td>
+                </tr>
+                <tr>
+                    <td>Уровень 2</td>
+                    <td id="level2"></td>
+                </tr>
+                <tr>
+                    <td>Уровень 3</td>
+                    <td id="level3"></td>
+                </tr>
+                <tr>
+                    <td>Всего</td>
+                    <td id="total"></td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="info_buttons">
+          <button class="buttonclass game_info" id="button_about" onclick="modal('about')"> об игре </button>
+          <div id="about" class="modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <h2> Об игре</h2>
+              </div>
+              <div class="modal-body">
+                <p> Эта игра является учебным итоговым проектом по курсу Верстка и Прототипирование Сайтов.</p>
+                <p> Игра содержит в себе 3 уровня, на каждом из которых в соответствии с заданием необходимо:</p>
+                <ol>
+                    <li class="info_elements">Одеть куклу в подходящую одежду;</li>
+                    <li class="info_elements">Выбрать фигуры по конкретной характеристике;</li>
+                    <li class="info_elements">Расположить фигуры в нужном порядке.</li>
+                </ol>
+                <p>Все задания выполняются на время.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="buttonclass close" data-close="true">Закрыть</button>
+              </div>
+            </div>
+          </div>
+          <button class="buttonclass game_info" id="theme_change"> сменить тему </button>
+          <button class="buttonclass game_info" onclick='location.href="index.html"'> главное меню </button>
+        </div>
+      </section>
+      <footer>
+        <p>2022</p>    
+      </footer>
+    </main>
+  </body>
+</html> 

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/8984b92ac6.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/theme.css" id="theme_link">
+    <script defer type="module" src="js/index_buttons.js"></script>
+    <script defer src="js/modal.js"></script>
+    <script defer src="../js/theme_load.js"></script>
+    <title>игра на время</title>
+  </head>
+  <body>
+    <header>
+      <p class="author">anastasia ruzhova</p>
+    </header>
+    <main>
+      <section class="content-overflow">
+        <h1 class="game_title">игра на время</h1>
+        <h2 class="auth_label">Авторизация</h2>
+        <div class="auth">
+          <input type="text" class="auth_name" placeholder="Введите имя" id="authField" />
+          <button class="buttonclass" id="startbutton">Старт</button>
+        </div>
+        <div class="info_buttons">
+          <button class="buttonclass game_info" id="button_about" onclick="modal('about')"> об игре </button>
+          <div id="about" class="modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                  <h2> Об игре</h2>
+              </div>
+              <div class="modal-body">
+                <p> Эта игра является учебным итоговым проектом по курсу Верстка и Прототипирование Сайтов.</p>
+                <p> Игра содержит в себе 3 уровня, на каждом из которых в соответствии с заданием необходимо:</p>
+                <ol>
+                    <li class="info_elements">Одеть куклу в подходящую одежду;</li>
+                    <li class="info_elements">Выбрать фигуры по конкретной характеристике;</li>
+                    <li class="info_elements">Расположить фигуры в нужном порядке.</li>
+                </ol>
+                <p>Все задания выполняются на время.</p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="buttonclass close" data-close="true">Закрыть</button>
+              </div>
+            </div>
+          </div>
+          <button class="buttonclass game_info" id="theme_change"> сменить тему </button>
+          <button class="buttonclass game_info" onclick='location.href="index.html"'> главное меню </button>
+        </div>
+      </section>
+      <footer>
+        <p>2022</p>    
+      </footer>
+    </main>
+  </body>
+</html> 

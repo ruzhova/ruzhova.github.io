@@ -1,0 +1,51 @@
+body {
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #f2c8cf, #f4d5c1, rgb(247, 227, 227));
+    background-size: 400% 400%;
+    animation: gradient 10s ease infinite;
+}
+header, .content-overflow{
+    border-bottom: 0.5px solid rgba(172, 117, 172, 0.832);
+}
+.author, main {
+    color: rgba(172, 117, 172, 0.832);
+}
+
+.buttonclass {
+    text-transform: inherit;
+    letter-spacing: inherit;
+    color: rgba(172, 117, 172, 0.832);
+    background-color: transparent;
+    border: 1px solid lightpink;
+    min-height: 30px;
+    min-width: 90px;
+}
+.buttonclass:hover {
+    background-color: lightpink;
+    border: 1px solid lightpink;
+    color: palevioletred;
+    opacity: 0.4;
+}
+.auth_name {
+    border: 1px solid #f598a8;
+    text-transform: inherit;
+    color: rgba(172, 117, 172, 0.832);
+    outline:0;
+}
+.auth_name:focus{
+    /* color: palevioletred; */
+    background-color: #f2c8cf;
+}
+.auth_name.text{
+    color: rgba(172, 117, 172, 0.832);
+}
+.table, .table th, .table td {
+	border: 1px solid lightpink;;
+}
+.modal-header, .modal-body, .modal-footer{
+    color: rgb(137, 66, 119);
+    background-color: mistyrose;
+}

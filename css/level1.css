@@ -1,0 +1,134 @@
+.level-1{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5%;
+}
+#clothes {
+    flex-grow: 1;
+    display: flex;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border: 2px solid lightblue;
+    border-radius: 15px;
+    background-color: white;
+    max-width: 850px;
+    margin: 0 0 0 2%;
+    align-items: flex-start;
+    max-height: 1200px;
+}
+.item {
+    /* margin: 1%; */
+    /* height: fit-content; */
+    /* z-index: 100; */
+    position: relative;
+}
+
+/* position of boys clothes */
+
+.boy-item1{
+    top: 92px;
+    left: 30px;
+}
+.boy-item2{
+    top: 90px;
+    left: 18px;
+}
+.boy-item3{
+    top: 184px;
+    left: 35px;
+    -moz-transform: rotate(3deg); /* Для Firefox */
+    -ms-transform: rotate(3deg); /* Для IE */
+    -webkit-transform: rotate(3deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(3deg); /* Для Opera */
+    transform: rotate(3deg);
+}
+.boy-item4{
+    top: 65px;
+    left: 14px;
+}
+
+/* position of girls clothes */
+
+.girl-item1{
+    top: 80px;
+    left: 35px;
+    -moz-transform: rotate(5deg); /* Для Firefox */
+    -ms-transform: rotate(5deg); /* Для IE */
+    -webkit-transform: rotate(5deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(5deg); /* Для Opera */
+    transform: rotate(5deg);
+}
+.girl-item2{
+    top: 65px;
+    left: 20px;
+    -moz-transform: rotate(3deg); /* Для Firefox */
+    -ms-transform: rotate(3deg); /* Для IE */
+    -webkit-transform: rotate(3deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(3deg); /* Для Opera */
+    transform: rotate(3deg);
+}
+.girl-item3{
+    top: 163px;
+    left: -17px;
+}
+.girl-item4{
+    top: 166px;
+    left: -8px;
+    -moz-transform: rotate(5deg); /* Для Firefox */
+    -ms-transform: rotate(5deg); /* Для IE */
+    -webkit-transform: rotate(5deg); /* Для Safari, Chrome, iOS */
+    -o-transform: rotate(5deg); /* Для Opera */
+    transform: rotate(5deg);
+}
+
+/* result - dressed doll container */
+
+#gender{
+    max-width: 200px;
+    position: relative;
+    /* flex-grow: 1; */
+    display: flex;
+    flex-flow: column;
+    /* justify-content: center; */
+    align-items: center;
+    border: 2px solid lightblue;
+    border-radius: 15px;
+    background-color: white;
+    margin: 0 2% 0 0;
+    /* padding: 2%; */
+}
+.boydoll{
+    display: none;
+    /* position: static; */
+}
+.girldoll{
+    display: none;
+}
+.show{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#doll{
+    width: fit-content;
+}
+/* wrong answer */
+
+.frame {
+    border: dashed 2px red;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 1260px) {
+    #clothes{
+        max-height: 700px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    #clothes{
+        max-height: 900px;
+    }
+}
