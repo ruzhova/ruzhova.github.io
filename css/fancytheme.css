@@ -47,5 +47,7 @@ header, .content-overflow{
 }
 .modal-header, .modal-body, .modal-footer{
     color: rgb(137, 66, 119);
+}
+.modal-content{
     background-color: mistyrose;
 }

@@ -80,7 +80,6 @@ header {
     cursor: pointer;
 }
 .modal-header, .modal-body, .modal-footer{
-    background-color: rgb(79, 33, 92);
     opacity: 1;
     color:white;
     display: flex;
@@ -100,15 +99,17 @@ header {
     padding: 10px;
 }
 .modal-content{
+    background-color: rgb(79, 33, 92);
     position: relative;
     margin: auto;
     max-width: 500px;
     box-shadow: 0 3px 7px rgba(0,0,0,0.4);
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius:15px;
     opacity: 1;
     transition: opacity 0.4s;
     animation: modalwindow 0.4s;
+    z-index: 2001;
 }
 
 .buttonclass {
