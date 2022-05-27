@@ -8,14 +8,18 @@ function begin() {
             let cfm = confirm("Вы не ввели имя! Нажимая \"ОК\" Вы продолжите под именем Игрок.");
             if (cfm == true) {
                 localStorage.setItem("username", defaultName);
-                localStorage.setItem("score", "0");
+                localStorage.setItem("score1", 0);
+                localStorage.setItem('score2', 0);
+                localStorage.setItem('score3', 0);
                 location.href = "../levels/level1.html";
             } else {
                 return;
             }
         } else {
             localStorage.setItem("username", authField.value);
-            localStorage.setItem("score", "0");
+            localStorage.setItem("score1", 0);
+            localStorage.setItem('score2', 0);
+            localStorage.setItem('score3', 0);
             location.href = "../levels/level1.html";
         }
     });

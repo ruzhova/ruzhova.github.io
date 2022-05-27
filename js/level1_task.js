@@ -175,7 +175,7 @@ function check_result(){
     taskfield = document.getElementById("taskfield").innerHTML.substring(11,document.getElementById("taskfield").innerHTML.length);
     const answerbox = document.getElementById("gender");
     var answers = new Array();
-    genderclass = 'boy';
+    let genderclass = 'boy';
     doll = document.getElementsByClassName('show');
     if (doll[0].classList[0] == "girldoll"){
         genderclass = 'girl';
@@ -206,7 +206,7 @@ function check_result(){
                 cnt ++;
             };
         }
-        if (wrong_answers.length>0){
+        if (wrong_answers.length>0 || cnt!=correct_answers[taskfield].length){
             if (cnt>0){
                 modal('true_false_answer');
                 localStorage.setItem('score1', 25)
